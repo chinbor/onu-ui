@@ -18,6 +18,7 @@ import {
   OSwitch,
   OTag,
   OTrigger,
+  OVirtualList,
 } from '@onu-ui/components'
 
 import type { Plugin } from 'vue'
@@ -42,4 +43,5 @@ export default [
   OConfigProvider,
   OEmpty,
   OBacktop,
+  OVirtualList,
 ] as Plugin[]

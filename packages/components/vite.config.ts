@@ -11,6 +11,11 @@ import type { ResolvedConfig } from 'vite'
 
 let config: ResolvedConfig = undefined!
 
+const externals = [
+  'vue',
+  'lodash-unified',
+]
+
 export default defineConfig({
   build: {
     emptyOutDir: false,
@@ -19,10 +24,11 @@ export default defineConfig({
       name: '@onu-ui/components',
     },
     rollupOptions: {
-      external: ['vue'],
+      external: externals,
       output: {
         globals: {
-          vue: 'Vue',
+          'vue': 'Vue',
+          'lodash-unified': 'LodashUnified',
         },
       },
     },

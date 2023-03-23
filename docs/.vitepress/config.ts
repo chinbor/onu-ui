@@ -69,6 +69,10 @@ const components = [
         text: 'Tag',
         link: '/components/tag',
       },
+      {
+        text: 'Virtual-list',
+        link: '/components/virtual-list',
+      },
     ],
   },
   {

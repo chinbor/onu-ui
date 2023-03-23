@@ -20,6 +20,7 @@ declare module 'vue' {
     OTag: typeof import('onu-ui')['OTag']
     OTrigger: typeof import('onu-ui')['OTrigger']
     OBacktop: typeof import('onu-ui')['OBacktop']
+    OVirtualList: typeof import('onu-ui')['OVirtualList']
   }
 }
 export {}

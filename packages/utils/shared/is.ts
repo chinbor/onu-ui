@@ -27,3 +27,4 @@ export const isElement = (vn: VNode) => Boolean(vn && vn.shapeFlag & ShapeFlags.
 export const isText = (vn: VNode, children: VNode['children']): children is string => Boolean(vn && vn.shapeFlag & ShapeFlags.TEXT_CHILDREN)
 export const isSlotsChildren = (vn: VNode, children: VNode['children']): children is Slots => Boolean(vn && vn.shapeFlag & ShapeFlags.SLOTS_CHILDREN)
 export const isArrayChildren = (vn: VNode, children: VNode['children']): children is VNode[] => Boolean(vn && vn.shapeFlag & ShapeFlags.ARRAY_CHILDREN)
+export const isUndefined = (val: any): val is undefined => val === undefined
